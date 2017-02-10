@@ -21,7 +21,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('html', ['images'], function() {
-  var out = folder.build + 'html/',
+  var out = folder.build,
       page = gulp.src(folder.src + 'html/**/*')
       .pipe(newer(out));
       page = page.pipe(htmlclean());
