@@ -1,0 +1,169 @@
+$dark-primary: #D32F2F;
+$secondary-color: #FFCDD2;
+$primary-light: #ffffff;
+
+$color-darkest: #212121;
+$color-lightest: #fff;
+$color-pop-primary: #00BCD4;
+$color-pop-secondary: #F44336;
+
+$spacing: 40px;
+
+body {
+  color: $color-darkest;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  max-width: 1980px;
+  padding: $spacing 0 0;
+  width: 90%;
+
+  @media (min-width: 1440px) {
+    width: 80%;
+  }
+}
+
+.logo {
+  font-size: 2em;
+
+  @media (min-width: 1060px) {
+    font-size: 3em;
+  }
+}
+
+.headline {
+  color: $color-pop-secondary;
+  font-size: 3em;
+  margin-bottom: 0;
+
+  @media (min-width: 1060px) {
+    font-size: 4em;
+  }
+
+  + p {
+    font-size: .8em;
+    margin: 0;
+  }
+}
+
+.row {
+  display: block;
+  padding: $spacing / 2 0;
+
+  @media (min-width: 767px) {
+    display: flex;
+    padding: $spacing 0;
+  }
+
+  h2 {
+    background-color: $color-pop-primary;
+    color: $color-lightest;
+    padding: $spacing / 2;
+  }
+
+  .col {
+    overflow: hidden;
+
+    @media (min-width: 767px) {
+      width: 50%;
+    }
+  }
+
+  .full-bg {
+    background-size: 0;
+
+    @media (min-width: 767px) {
+      background-position: 40% center;
+      background-size: cover;
+      display: block;
+    }
+
+    @media (min-width: 1024px) {
+      background-position: center center;
+    }
+
+    img {
+      max-width: 100%;
+
+      @media (min-width: 767px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.noimage h2 {
+  margin: 0;
+}
+
+p {
+  font-size: 80%;
+  line-height: 200%;
+  margin: $spacing / 2;
+
+  @media (min-width: 767px) {
+    font-size: 100%;
+    line-height: 150%;
+  }
+
+  @media (min-width: 1440px) {
+    margin: $spacing / 2;
+  }
+}
+
+.detached-dark {
+  background-color: $color-darkest;
+  color: $color-lightest;
+  margin: 0;
+  padding: $spacing / 2;
+  text-align: center;
+
+  @media (min-width: 1024px) {
+    padding: $spacing;
+  }
+}
+
+a {
+  color: $color-pop-primary;
+}
+
+.button {
+  background-color: $color-pop-secondary;
+  border-radius: 10px;
+  box-shadow: 0;
+  color: $color-lightest;
+  display: inline-block;
+  font-weight: bold;
+  padding: 15px $spacing;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow .2s;
+
+  &:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .5);
+    transition: box-shadow .2s;
+  }
+}
+
+.embed-container {
+  height: 0;
+  margin: $spacing / 2;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  @media (min-width: 767px) {
+    margin: $spacing;
+  }
+
+  iframe,
+  object,
+  embed {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

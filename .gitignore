@@ -1,0 +1,20 @@
+# Build Folder
+build/
+
+# OS System Files
+.DS_Store
+
+# Sublime Files
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency Directories
+node_modules
+
+# Optional npm cache directory
+.npm
